@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string>
-#include <gl/glew.h>]
+#include <gl/glew.h>
 #include <gl/freeglut.h>
 #include <assert.h>
 #include <fstream>
@@ -20,8 +20,8 @@ Camera* GameCamera = NULL;
 Texture* pTexture = NULL;
 PersProjInfo gPersProjInfo;
 
-const char* pVSFileName = "shader.vs";
-const char* pFSFileName = "shader.fs";
+const char* pVSFileName = "E:\\vs2017\\7.3\\Texture\\Texture\\shader.vs";
+const char* pFSFileName = "E:\\vs2017\\7.3\\Texture\\Texture\\shader.fs";
 
 struct Vertex
 {
@@ -245,7 +245,7 @@ int main(int argc, char** argv)
 
 	glUniform1i(gSampler, 0);
 
-	pTexture = new Texture(GL_TEXTURE_2D, "test.png");
+	pTexture = new Texture(GL_TEXTURE_2D, "E:\\vs2017\\7.3\\Texture\\Texture\\test.png");
 
 	if (!pTexture->Load()) {
 		return 1;
